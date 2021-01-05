@@ -4,10 +4,19 @@
 
 ## 03-Maps
 
-#### Generate random marker if info window on the google map
+#### Generate random marker with info window on the google map
 
-##### Use:
+###### Learn:
 
 1. TypeScript class and interface examples
-2. TS types introduction
-3. TS work with google map api
+2. TypeScript types introduction
+3. TypeScript work with google map api
+
+## 04-Sort
+
+#### Sorting data with TypeScript
+
+###### Learn:
+
+1. compile TypeScript file into Javascript file
+2. tsconfig.json file set up
