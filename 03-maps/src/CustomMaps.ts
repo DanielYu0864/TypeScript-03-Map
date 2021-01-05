@@ -13,7 +13,7 @@ export interface Mappable {
 //* Create extra CustomMaps class to limited the method from GoogleMaps api to avoid called unused function accidentally
 export class CustomMaps {
   // public will be default in the class in TS in this case we do "private" to avoid called from other file
-  private googleMap: google.maps.Map;
+  private googleMap: google.maps.Map; //? to see more detill about google.maps.Map "ctrl" + left click to see document
   constructor(divId: string) {
     this.googleMap = new google.maps.Map(document.getElementById(divId), {
       zoom: 1,
