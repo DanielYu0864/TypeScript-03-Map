@@ -16,7 +16,11 @@
 
 #### Sorting data with TypeScript
 
+- Use bubble sort
+
 ###### Learn:
 
 1. compile TypeScript file into Javascript file
 2. tsconfig.json file set up
+3. Linked list
+4. interface && Abstract
