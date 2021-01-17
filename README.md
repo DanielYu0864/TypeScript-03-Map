@@ -24,3 +24,9 @@
 2. tsconfig.json file set up
 3. Linked list
 4. interface && Abstract
+
+## 05-stats
+
+#### TypeScript and Data
+
+###### Learn:
