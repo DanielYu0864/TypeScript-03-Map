@@ -30,3 +30,7 @@
 #### TypeScript and Data
 
 ###### Learn:
+
+1. load data out of csv file
+2. Enums in TypeScript
+3. Tuple in TupeScript
