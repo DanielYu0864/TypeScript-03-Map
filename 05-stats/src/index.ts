@@ -1,11 +1,11 @@
-import { CsvFileReader } from './CsvFileReader';
+import { MatchReader } from './MatchReader';
 import { MatchResult } from './MatchResult';
 //? step to get data from csv file
 //? Load (node std lib) -> prase -> analyze -> report
 
 //* install nodes ts instead of fs EX: $ npm i @types/node
 // step 1: load the data from csv file to string
-const reader = new CsvFileReader('football.csv');
+const reader = new MatchReader('football.csv');
 reader.read();
 // console.log(reader);
 //* bad code version

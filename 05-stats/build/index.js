@@ -1,12 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var CsvFileReader_1 = require("./CsvFileReader");
+var MatchReader_1 = require("./MatchReader");
 var MatchResult_1 = require("./MatchResult");
 //? step to get data from csv file
 //? Load (node std lib) -> prase -> analyze -> report
 //* install nodes ts instead of fs EX: $ npm i @types/node
 // step 1: load the data from csv file to string
-var reader = new CsvFileReader_1.CsvFileReader('football.csv');
+var reader = new MatchReader_1.MatchReader('football.csv');
 reader.read();
 // console.log(reader);
 //* bad code version
