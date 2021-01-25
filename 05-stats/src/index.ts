@@ -1,20 +1,20 @@
 import { MatchReader } from './MatchReader';
+import { CsvFileReader } from './CsvFileReader';
 import { MatchResult } from './MatchResult';
 //? step to get data from csv file
 //? Load (node std lib) -> prase -> analyze -> report
 
-//* install nodes ts instead of fs EX: $ npm i @types/node
-// step 1: load the data from csv file to string
-const reader = new MatchReader('football.csv');
-reader.read();
-// console.log(reader);
-//* bad code version
-//* count how many times that the team 'Man United' win
+//step 1 Create an object that satisfies the 'DataReader' interface
+const csvFileReader = new CsvFileReader('football.csv');
+//step 2 Create an instance of MatchReader and pass in something satisfying the 'DataReader' interface
+const matchReader = new MatchReader(csvFileReader);
+matchReader.load();
+// matchReader.matches
 
 
 let manUnitedWins: number = 0;
 
-for (let match of reader.data) {
+for (let match of matchReader.matches) {
   if (match[1] === 'Man United' && match[5] === MatchResult.HomeWin) {
     manUnitedWins++;
   } else if (match[2] === 'Man United' && match[5] === MatchResult.AwayWin) {

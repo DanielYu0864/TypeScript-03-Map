@@ -20,7 +20,8 @@ var CsvFileReader = /** @class */ (function () {
             .split('\n') // step 2: split string into array
             .map(function (row) {
             return row.split(',');
-        });
+        })
+            .map(this.mapRow);
     };
     return CsvFileReader;
 }());
