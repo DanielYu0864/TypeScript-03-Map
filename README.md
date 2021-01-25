@@ -34,3 +34,4 @@
 1. load data out of csv file
 2. Enums in TypeScript
 3. Tuple in TupeScript
+4. Ingeritance V.S. Composition
