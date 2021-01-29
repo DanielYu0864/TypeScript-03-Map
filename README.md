@@ -32,6 +32,7 @@
 ###### Learn:
 
 1. load data out of csv file
-2. Enums in TypeScript
-3. Tuple in TupeScript
-4. Ingeritance V.S. Composition
+2. enums in TypeScript
+3. tuple in TypeScript
+4. generic in TypeScript
+5. Inheritance & Composition in TypeScript (and why compostion is better in this case)
