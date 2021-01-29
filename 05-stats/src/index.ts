@@ -3,6 +3,7 @@ import { CsvFileReader } from './CsvFileReader';
 import { ConsoleReport } from './reportTargets/ConsoleReport';
 import { WinsAnalysis } from './analyzers/WinsAnalys';
 import { Summary } from './Summary';
+import { HTMLReport } from './reportTargets/HTMLReport';
 //? step to get data from csv file
 //? Load (node std lib) -> prase -> analyze -> report
 
@@ -17,7 +18,7 @@ matchReader.load();
 //step 3 call data
 const summary = new Summary(
   new WinsAnalysis('Man United'),
-  new ConsoleReport()
+  new HTMLReport()
 );
 
 summary.buildAndPrintReport(matchReader.matches);
